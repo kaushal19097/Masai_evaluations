@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.deals-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 15px 0;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #555;
+}
+
+.nav-item.active {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.spotlight-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.spotlight-header {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.spotlight-content {
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.product-image {
+    max-width: 400px;
+}
+
+.product-info {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.almost-gone {
+    color: red;
+    font-size: 14px;
+}
+
+.featured-deals {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.featured-deals-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.corner-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.corner-tag-icon {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    font-size: 14px;
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.product-card {
+    width: calc(33.333% - 10px);
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+}
+
+.product-card-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    height: 140px;
+}
+
+.product-card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-card-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-card-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-card-original-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.discount {
+    color: red;
+    font-size: 14px;
+}
+
+.refurbished-tag {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.refurbished-tag .dot {
+    color: blue;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Cell Phones Section */
+.cell-phones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.cell-phone-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cell-phone-item:nth-child(3n) {
+    border-right: none;
+}
+
+.cell-phone-item:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+.cell-phone-image {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.cell-phone-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.cell-phone-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.cell-phone-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.view-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.view-all-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.view-all-subtext {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.view-all-arrow {
+    color: blue;
+    font-size: 30px;
+}
+
+.center-cell {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.center-cell img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
